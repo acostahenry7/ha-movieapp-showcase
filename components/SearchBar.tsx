@@ -4,14 +4,14 @@ import { icons } from "@/constants/icons";
 
 interface Props {
   placeholder: string;
-  value: string;
+  value?: string;
   onPress?: () => void;
   onChangeText?: (text: string) => void;
 }
 
 const SearchBar = ({ placeholder, value, onPress, onChangeText }: Props) => {
   return (
-    <View className="flex-row items-center bg-dark-200 rounded-full px-5 py-3 ">
+    <View className="flex-row items-center bg-dark-200 rounded-full px-5 py-2 ">
       <Image
         source={icons.search}
         className="size-5"
@@ -23,7 +23,7 @@ const SearchBar = ({ placeholder, value, onPress, onChangeText }: Props) => {
         placeholder={placeholder || "Search"}
         value={value}
         onChangeText={onChangeText}
-        placeholderTextColor="#ab8bff"
+        placeholderTextColor="#A8B5DB"
         className="flex-1 ml-2 text-white"
         keyboardType="web-search"
       />

@@ -9,6 +9,7 @@ const TabLayout = () => {
     if (focused) {
       return (
         <ImageBackground
+          style={{ backgroundColor: "##030014" }}
           source={images.highlight}
           className="flex flex-row w-full flex-1 min-w-[112px] min-h-16 mt-4 justify-center items-center rounded-full overflow-hidden"
         >
